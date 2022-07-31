@@ -49,24 +49,74 @@ nav .navbar .nav-links .links li {
 }
 
 nav .navbar .nav-links .links li a {
+    height: 100%;
+    white-space: nowrap;
     color: #fff;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 nav .navbar .nav-links .links li .arrow {
-    background-color: red;
     height: 100%;
     width: 22px;
     text-align: center;
     line-height: 70px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+nav .navbar .nav-links .links li:hover .featurescss-arrow,
+nav .navbar .nav-links .links li:hover .companycss-arrow {
+    transform: rotate(180deg);
+}
+
+.navbar .nav-links .links .sub-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    line-height: 40px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.navbar .nav-links .links .sub-menu li {
+    padding: 0 22px;
+}
+
+.navbar .nav-links .links .sub-menu li a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;;
+}
+
+nav .navbar .nav-links .links li:hover .featurescss-sub-menu,
+nav .navbar .nav-links .links li:hover .companycss-sub-menu {
+    display: block;
+}
+
+@media (max-width: 954px) {
+    nav .navbar {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+
+    nav .navbar .logo a {
+        font-size: 1.8rem;
+    }
+
+    nav .navbar .nav-links .links li a {
+        font-size: 15;
+    }
     
 }
 
+@media (max-width: 800px) {
 
-
-
-
-
+    
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
