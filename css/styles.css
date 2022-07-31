@@ -114,7 +114,27 @@ nav .navbar .nav-links .links li:hover .companycss-sub-menu {
 }
 
 @media (max-width: 800px) {
+    nav .navbar .nav-links {
+        display: block;
+        position: fixed;
+        background-color: black;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 270px;
+        padding: 20px;
+        line-height: 40px;
+    }
 
+    nav .navbar .nav-links .links {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .nav-links .sidebar-logo .bx-x {
+        color: #fff;
+        font-size: 3rem;
+    }
     
 }
 
