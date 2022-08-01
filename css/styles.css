@@ -25,7 +25,7 @@ nav .navbar {
 }
 
 nav .navbar .logo {
-    width: 7%;
+    width: 70px;
 }
 
 /* login & register section */
@@ -53,6 +53,7 @@ nav .navbar .login ul li .btn {
     font-size: 12px;
     color: hsl(0, 0%, 41%);
     border-color: hsl(0, 0%, 41%);
+    background-color: #fff;
 }
 
 
@@ -123,8 +124,9 @@ nav .navbar .nav-links .links li:hover .companycss-arrow {
     color: hsl(0, 0%, 41%);
     font-weight: 500;
     font-size: 12px;
-    ;
+
 }
+
 
 nav .navbar .nav-links .links li:hover .featurescss-sub-menu,
 nav .navbar .nav-links .links li:hover .companycss-sub-menu {
@@ -136,6 +138,11 @@ nav .navbar .nav-links .links li:hover .companycss-sub-menu {
     display: none;
 }
 
+.bxs-calendar-week {
+    font-size: 14px;
+    margin-right: 0.5rem;
+    color: hsl(242, 42%, 51%);
+}
 @media (max-width: 954px) {
     nav .navbar {
         max-width: 100%;
@@ -159,7 +166,7 @@ nav .navbar .nav-links .links li:hover .companycss-sub-menu {
     nav .navbar .nav-links {
         display: block;
         position: fixed;
-        background-color: black;
+        background-color: #fff;
         top: 0;
         right: -100%;
         width: 100%;
@@ -178,12 +185,13 @@ nav .navbar .nav-links .links li:hover .companycss-sub-menu {
 
     .navbar .bx-menu,
     .nav-links .sidebar-logo .bx-x {
-        color: #fff;
+        color: black;
         font-size: 3rem;
     }
 
     .navbar .bx-menu {
-        display: block
+        display: block;
+
     }
 
     .nav-links .sidebar-logo .bx-x {
@@ -231,6 +239,16 @@ nav .navbar .nav-links .links li:hover .companycss-sub-menu {
         transform: rotate(180deg);
     }
 
+    nav .navbar .login ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    
+    }
+
+    nav .navbar .login ul li .btn {
+        padding: 0.8rem 5.5rem;
+    }
 
 
 
