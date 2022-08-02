@@ -6,14 +6,14 @@
 }
 
 .overlay {
-    background-color:black;
+    background-color: black;
     position: absolute;
     width: 100%;
     height: 100vh;
     opacity: 70%;
     pointer-events: none;
     display: none;
-    
+
 }
 
 nav {
@@ -49,7 +49,7 @@ nav .navbar .login ul {
 }
 
 nav .navbar .login ul li {
-padding: 0 14px;
+    padding: 0 14px;
 }
 
 nav .navbar .login ul li a {
@@ -59,7 +59,8 @@ nav .navbar .login ul li a {
 }
 
 nav .navbar .login ul li .btn {
-    padding: 0.6rem 1.1rem;;
+    padding: 0.6rem 1.1rem;
+    ;
     border-radius: 13px;
     font-size: 12px;
     color: hsl(0, 0%, 41%);
@@ -165,11 +166,11 @@ nav .navbar .nav-links .links li a:hover {
 
 /* align sub-menu */
 
-nav .navbar .nav-links .links  .featurescss-sub-menu {
+nav .navbar .nav-links .links .featurescss-sub-menu {
     left: -60%;
 }
 
-nav .navbar .nav-links .links  .companycss-sub-menu {
+nav .navbar .nav-links .links .companycss-sub-menu {
     left: 10%;
 }
 
@@ -187,7 +188,7 @@ nav .navbar .nav-links .links  .companycss-sub-menu {
     margin-right: 0.5rem;
 }
 
-.bxs-calendar-week{
+.bxs-calendar-week {
     color: hsl(242, 42%, 51%);
 }
 
@@ -196,9 +197,10 @@ nav .navbar .nav-links .links  .companycss-sub-menu {
 }
 
 .bxs-bell {
-    color:hsl(56, 100%, 50%);
+    color: hsl(56, 100%, 50%);
 
 }
+
 .bxs-time-five {
     color: purple;
 
@@ -222,7 +224,7 @@ nav .navbar .nav-links .links  .companycss-sub-menu {
     margin: auto;
 }
 
-.container > * {
+.container>* {
     width: 100%;
     padding: 2.5rem 5rem 5rem;
 }
@@ -254,7 +256,7 @@ nav .navbar .nav-links .links  .companycss-sub-menu {
 }
 
 .container .text-split button {
-    padding: 0.9rem  1.2rem;
+    padding: 0.9rem 1.2rem;
     border-radius: 13px;
     border-style: none;
     color: #fff;
@@ -268,10 +270,10 @@ nav .navbar .nav-links .links  .companycss-sub-menu {
     align-items: center;
     justify-content: space-between;
     margin-top: auto;
-    
+
 }
 
-.container .text-split .logos > * {
+.container .text-split .logos>* {
     width: 70px;
 }
 
@@ -322,7 +324,7 @@ nav .navbar .nav-links .links  .companycss-sub-menu {
         top: 0;
         right: -100%;
         width: 100%;
-        max-width: 270px;
+        max-width: 250px;
         padding: 20px;
         line-height: 40px;
         transition: all 0.5s ease;
@@ -391,8 +393,8 @@ nav .navbar .nav-links .links  .companycss-sub-menu {
         transform: rotate(180deg);
     }
 
-    nav .navbar .nav-links .links  .featurescss-sub-menu,
-    nav .navbar .nav-links .links  .companycss-sub-menu {
+    nav .navbar .nav-links .links .featurescss-sub-menu,
+    nav .navbar .nav-links .links .companycss-sub-menu {
         left: 0;
     }
 
@@ -400,11 +402,11 @@ nav .navbar .nav-links .links  .companycss-sub-menu {
         display: flex;
         flex-direction: column;
         margin-top: 1.5rem;
-    
+
     }
 
     nav .navbar .login ul li .btn {
-        padding: 0.8rem 5.5rem;
+        padding: 0.8rem 4rem;
     }
 
 
@@ -422,7 +424,7 @@ nav .navbar .nav-links .links  .companycss-sub-menu {
         padding: 0;
     }
 
- 
+
 
 
     .desktop {
@@ -438,14 +440,14 @@ nav .navbar .nav-links .links  .companycss-sub-menu {
         text-align: center;
     }
 
-    .container .text-split h1{
+    .container .text-split h1 {
         font-size: 2.2rem;
         padding: 0;
         margin-top: 2.2rem;
         margin-bottom: 1.8rem;
     }
 
-    .container .text-split p{
+    .container .text-split p {
         font-size: 1rem;
         margin-bottom: 1.5rem;
     }
@@ -454,22 +456,43 @@ nav .navbar .nav-links .links  .companycss-sub-menu {
         margin: auto auto 3rem;
     }
 
-    .container .text-split .logos > * {
+    .container .text-split .logos>* {
         width: 60px;
     }
-    
-}
+
+    /* Change Fonts Size */
+
+    .navbar .nav-links .links .sub-menu li a,
+    nav .navbar .nav-links .links li a,
+    nav .navbar .login ul li a,
+    nav .navbar .login ul li .btn {
+        font-size: 14px;
+    }
+
+    .bxs-time-five,
+    .bxs-bell,
+    .bxs-calendar-event,
+    .bxs-calendar-week {
+        font-size: 22px;
+        margin-bottom: 0.3rem;
+    }
+
+    .navbar .nav-links .links .sub-menu li a {
+        display: flex;
+        align-items: center;
+        line-height: 2.8;
+    }
 
 @media (max-width: 370px) {
     nav .navbar .nav-links {
         max-width: 100%;
-    } 
+    }
 }
 
 .attribution {
     font-size: 10px;
     text-align: center;
-
+    background-color: aqua;
 }
 
 .attribution a {
