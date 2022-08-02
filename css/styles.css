@@ -5,8 +5,10 @@
     box-sizing: border-box;
 }
 
+
+
 nav {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
@@ -54,7 +56,20 @@ nav .navbar .login ul li .btn {
     color: hsl(0, 0%, 41%);
     border-color: hsl(0, 0%, 41%);
     background-color: #fff;
+    cursor: pointer;
 }
+
+nav .navbar .login ul li .btn:hover {
+    color: black;
+    border-color: black;
+    font-weight: 700;
+}
+
+nav .navbar .login ul li a:hover {
+    color: black;
+    font-weight: 700;
+}
+
 
 
 /* login & register section end */
@@ -109,7 +124,7 @@ nav .navbar .nav-links .links li:hover .companycss-arrow {
 .navbar .nav-links .links .sub-menu {
     position: absolute;
     top: 70px;
-    left: -60px;
+    left: 0px;
     line-height: 30px;
     background-color: #fff;
     border-radius: 10px;
@@ -132,6 +147,23 @@ nav .navbar .nav-links .links li:hover .featurescss-sub-menu,
 nav .navbar .nav-links .links li:hover .companycss-sub-menu {
     display: block;
 }
+
+
+nav .navbar .nav-links .links li a:hover {
+    color: black;
+    font-weight: 700;
+}
+
+/* align sub-menu */
+
+nav .navbar .nav-links .links  .featurescss-sub-menu {
+    left: -60%;
+}
+
+nav .navbar .nav-links .links  .companycss-sub-menu {
+    left: 10%;
+}
+
 
 .navbar .bx-menu,
 .nav-links .sidebar-logo .bx-x {
@@ -164,6 +196,91 @@ nav .navbar .nav-links .links li:hover .companycss-sub-menu {
 }
 
 
+
+
+
+
+
+
+/* main container */
+
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.container > * {
+    width: 100%;
+    padding: 2.5rem 5rem 5rem;
+}
+
+
+.container .text-split {
+    padding-left: 9rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .image-split img {
+    width: 100%;
+}
+
+.container .text-split h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-top: 5.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.container .text-split p {
+    font-size: 14px;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+}
+
+.container .text-split button {
+    padding: 0.9rem  1.2rem;
+    border-radius: 13px;
+    border-style: none;
+    color: #fff;
+    background-color: black;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.container .text-split .logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    
+}
+
+.container .text-split .logos > * {
+    width: 70px;
+}
+
+.container .text-split button:hover {
+    background-color: #fff;
+    color: black;
+    border-style: solid;
+    font-weight: 700;
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+
+
 @media (max-width: 954px) {
     nav .navbar {
         max-width: 100%;
@@ -184,6 +301,11 @@ nav .navbar .nav-links .links li:hover .companycss-sub-menu {
 
 
 @media (max-width: 800px) {
+
+    nav .navbar {
+        width: 100%;
+    }
+
     nav .navbar .nav-links {
         display: block;
         position: fixed;
@@ -212,7 +334,7 @@ nav .navbar .nav-links .links li:hover .companycss-sub-menu {
 
     .navbar .bx-menu {
         display: block;
-
+        margin-left: auto;
     }
 
     .nav-links .sidebar-logo .bx-x {
@@ -260,6 +382,11 @@ nav .navbar .nav-links .links li:hover .companycss-sub-menu {
         transform: rotate(180deg);
     }
 
+    nav .navbar .nav-links .links  .featurescss-sub-menu,
+    nav .navbar .nav-links .links  .companycss-sub-menu {
+        left: 0;
+    }
+
     nav .navbar .login ul {
         display: flex;
         flex-direction: column;
@@ -272,7 +399,56 @@ nav .navbar .nav-links .links li:hover .companycss-sub-menu {
     }
 
 
+    /* Main Container */
 
+
+    .container {
+        flex-wrap: wrap;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .container .image-split {
+        padding: 0;
+    }
+
+ 
+
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .container .text-split {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .container .text-split h1{
+        font-size: 2.2rem;
+        padding: 0;
+        margin-top: 2.2rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .container .text-split p{
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .container .text-split button {
+        margin: auto auto 3rem;
+    }
+
+    .container .text-split .logos > * {
+        width: 60px;
+    }
+    
 }
 
 @media (max-width: 370px) {
@@ -282,8 +458,9 @@ nav .navbar .nav-links .links li:hover .companycss-sub-menu {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 10px;
     text-align: center;
+
 }
 
 .attribution a {
