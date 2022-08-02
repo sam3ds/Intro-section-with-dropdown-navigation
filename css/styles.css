@@ -5,7 +5,16 @@
     box-sizing: border-box;
 }
 
-
+.overlay {
+    background-color:black;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 70%;
+    pointer-events: none;
+    display: none;
+    
+}
 
 nav {
     position: static;
