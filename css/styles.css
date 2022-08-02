@@ -482,7 +482,7 @@ nav .navbar .nav-links .links .companycss-sub-menu {
         align-items: center;
         line-height: 2.8;
     }
-
+}
 @media (max-width: 370px) {
     nav .navbar .nav-links {
         max-width: 100%;
@@ -490,11 +490,12 @@ nav .navbar .nav-links .links .companycss-sub-menu {
 }
 
 .attribution {
-    font-size: 10px;
+    font-size:14px;
     text-align: center;
-    background-color: aqua;
+    margin-top: 5rem;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    
 }
